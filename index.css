@@ -1,0 +1,45 @@
+caption {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    border: 3px solid black;
+    text-align: center;
+    background-color: white;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+td, img {
+    --cell-size: 8vmin;
+    width: clamp(30px, var(--cell-size), 50px);
+    height: clamp(30px, var(--cell-size), 50px);
+}
+
+p {
+    text-align: center;
+}
+
+input {
+    width: 50px;
+}
+
+img {
+    vertical-align: middle;
+    position: relative;
+    animation-fill-mode: backwards;
+}
+
+@keyframes path {
+    to {
+        background-color: brown;
+        font-weight: bold;
+        font-size: 24px;
+        color: white;
+    }
+}
