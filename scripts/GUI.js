@@ -83,7 +83,7 @@ class GUI {
         iSize.onchange = this.init.bind(this);
         iSize.focus();
         iStart.onclick = this.init.bind(this);
-        let size = parseInt(iSize.value);
+        let size = iSize.valueAsNumber;
         this.game = new Talpa(size, size);
         this.game.startBoard();
         let board = this.game.getBoard();
