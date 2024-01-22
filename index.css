@@ -5,6 +5,7 @@ caption {
 
 table {
     margin: 0 auto;
+    border-collapse: separate;
 }
 
 td {
@@ -25,8 +26,8 @@ p {
     text-align: center;
 }
 
-input {
-    width: 50px;
+input[type="number"] {
+    width: 5em;
 }
 
 img {
